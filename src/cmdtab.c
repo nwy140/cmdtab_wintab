@@ -619,8 +619,11 @@ static i32 MouseX, MouseY;      // Mouse position, for highlighting and clicking
 
 static struct config Config = { // cmdtab settings
 	// Hotkeys
-	.hotkeyForApps =    { 0x38, 0x0F }, // Alt-Tab in scancodes, must be updated during runtime, see InitConfig
-	.hotkeyForWindows = { 0x38, 0x29 }, // Alt-Tilde/Backquote in scancodes, must be updated during runtime, see InitConfig
+	//	.hotkeyForApps =    { 0x38, 0x0F }, // Alt-Tab in scancodes, must be updated during runtime, see InitConfig
+	//	.hotkeyForWindows = { 0x38, 0x29 }, // Alt-Tilde/Backquote in scancodes, must be updated during runtime, see InitConfig
+	.hotkeyForApps =    { 0x5B, 0x0F }, // Win-Tab
+	.hotkeyForWindows = { 0x5B, 0x29 }, // Win-`
+
 	// Behavior
 	.switchApps              = true,
 	.switchWindows           = true,
